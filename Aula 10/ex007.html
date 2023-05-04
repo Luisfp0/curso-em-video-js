@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Somando números</title>
+  </head>
+  <body>
+    <div>
+      <p>Programa para soma de valores</p>
+      <div>
+        <p>Digite o primeiro valor:</p>
+        <input class="resp1" />
+      </div>
+      <div>
+        <p>Digite o segundo valor:</p>
+        <input class="resp2" />
+      </div>
+      <button onClick="addValue()" class="btn">Some</button>
+      <p class="result"></p>
+    </div>
+    <script>
+      var resp1 = document.querySelector('.resp1');
+      var resp2 = document.querySelector('.resp2');
+      var result = document.querySelector('.result');
+      function addValue() {
+        var valor1 = Number(resp1.value);
+        var valor2 = Number(resp2.value);
+        var resultado = valor1 + valor2;
+        result.innerHTML = `O resultado da soma entre ${valor1} e ${valor2} = ${resultado}`;
+      }
+    </script>
+  </body>
+</html>

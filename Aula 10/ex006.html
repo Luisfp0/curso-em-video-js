@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eventos DOM</title>
+    <style>
+      .area {
+        font: normal 20px Arial;
+        background-color: green;
+        color: white;
+        width: 200px;
+        height: 200px;
+        line-height: 200px;
+        text-align: center;
+      }
+
+      .classeCor {
+        font: normal 20px Arial;
+        background-color: rgb(59, 24, 175);
+        color: black;
+        width: 200px;
+        height: 200px;
+        line-height: 200px;
+        text-align: center;
+        border: 4px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="area" onclick="clicou()">Interaja...</button>
+    <script>
+      function clicou() {
+        var myDiv = document.querySelector('.area');
+        myDiv.classList.toggle('classeCor');
+      }
+    </script>
+  </body>
+</html>

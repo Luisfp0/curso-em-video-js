@@ -1,0 +1,18 @@
+body {
+  background-color: rgba(23, 23, 145, 0.735);
+}
+
+header {
+  color: white;
+  text-align: center;
+}
+
+section {
+  padding-left: 15px;
+  padding-bottom: 15px;
+  margin: auto;
+  border-radius: 15px;
+  background-color: white;
+  width: 300px;
+  align-items: center;
+}

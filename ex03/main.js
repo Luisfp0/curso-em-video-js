@@ -11,4 +11,3 @@ function contar() {
     document.querySelector('.display-contagem').textContent += `${i}   `
   }
 }
-
